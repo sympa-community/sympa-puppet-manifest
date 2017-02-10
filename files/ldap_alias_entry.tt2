@@ -1,0 +1,10 @@
+# This is the template for ldap entries used by ldap_alias_manager.pl
+
+dn: cn=[% list.alias %],[% ldap_base_dn %]
+objectClass: organizationalRole
+objectClass: zimbraMailRecipient
+zimbraMailDeliveryAddress: [% list.alias %]@[% list.domain %]
+cn: [% list.alias %]
+zimbraMailTransport: [% list.command %]
+
+# vim: ft=ldif

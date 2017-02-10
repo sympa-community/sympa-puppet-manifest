@@ -1,0 +1,7 @@
+/var/log/sympa.log {
+   rotate 90
+   daily
+   missingok
+   notifempty
+   compress
+}

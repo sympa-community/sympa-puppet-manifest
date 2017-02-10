@@ -1,0 +1,11 @@
+[Unit]
+Description=SYMPA mailing list manager (bounced)
+After=syslog.target
+BindTo=sympa.service
+
+[Service]
+User=sympa
+Group=sympa
+Type=forking
+PIDFile=/usr/local/sympa/bounced.pid
+ExecStart=/usr/local/sympa/bin/bounced.pl

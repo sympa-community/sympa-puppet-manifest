@@ -1,0 +1,18 @@
+[Unit]
+Description=SYMPA mailing list manager
+After=syslog.target
+Wants=sympa-bulk.service
+Wants=sympa-archived.service
+Wants=sympa-bounced.service
+Wants=sympa-task_manager.service
+
+[Service]
+User=sympa
+Group=sympa
+Type=forking
+PIDFile=/usr/local/sympa/sympa_msg.pid
+ExecStartPre=/usr/local/sympa/bin/sympa.pl --health_check
+ExecStart=/usr/local/sympa/bin/sympa_msg.pl
+
+[Install]
+WantedBy=multi-user.target

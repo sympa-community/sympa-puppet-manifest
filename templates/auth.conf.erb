@@ -1,0 +1,15 @@
+cas
+        base_url                        https://cas.<%= @domain %>
+        auth_service_name               CAS_<%= @domain.capitalize %>
+        ldap_host                       ldap.<%= @domain -%>:389
+        non_blocking_redirection        on
+        timeout                         20
+        ldap_suffix                     dc=<%= @ldap_suffix %>
+        ldap_get_email_by_uid_filter    (supannaliaslogin=[uid])
+        ldap_email_attribute            mail
+        ldap_scope                      sub
+        ldap_bind_dn                    uid=sympa,ou=system,dc=<%= @ldap_suffix %>
+        ldap_bind_password              <%= @ldap_password %>
+
+user_table
+        regexp .*

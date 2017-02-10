@@ -1,0 +1,8 @@
+ldap_host <%= @ldap_host %>
+ldap_base_dn dc=<%= @full_ldap_suffix %>
+ldap_bind_dn <%= @ldap_dn %>
+ldap_bind_pwd <%= @ldap_passwd %>
+ldap_mail_attribute zimbraMailiDeliveryAddress
+ldap_ssl 0
+queue_transport "| /usr/local/sympa/bin/queue"
+bouncequeue_transport "| /usr/local/sympa/bin/bouncequeue"

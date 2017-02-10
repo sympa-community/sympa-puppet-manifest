@@ -1,0 +1,3 @@
+sympa: "| /home/sympa/bin/queue sympa@<%= @basename -%>"
+bounce+*: "| /home/sympa/bin/bouncequeue sympa@<%= @basename -%>"
+abuse-feedback-report: "| /home/sympa/bin/bouncequeue sympa@<%= @basename -%>"

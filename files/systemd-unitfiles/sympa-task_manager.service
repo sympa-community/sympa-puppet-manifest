@@ -1,0 +1,11 @@
+[Unit]
+Description=SYMPA mailing list manager (task_manager)
+After=syslog.target
+BindTo=sympa.service
+
+[Service]
+User=sympa
+Group=sympa
+Type=forking
+PIDFile=/usr/local/sympa/task_manager.pid
+ExecStart=/usr/local/sympa/bin/task_manager.pl

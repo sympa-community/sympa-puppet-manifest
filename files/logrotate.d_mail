@@ -1,0 +1,8 @@
+/var/log/mail.log {
+   rotate 90
+   daily
+   missingok
+   notifempty
+   compress
+}
+

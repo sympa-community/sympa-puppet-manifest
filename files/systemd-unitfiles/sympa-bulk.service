@@ -1,0 +1,10 @@
+[Unit]
+Description=SYMPA mailing list manager (bulk)
+After=syslog.target
+BindTo=sympa.service
+
+[Service]
+User=sympa
+Group=sympa
+Type=forking
+ExecStart=/usr/local/sympa/bin/bulk.pl
