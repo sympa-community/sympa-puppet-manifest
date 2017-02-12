@@ -1,0 +1,11 @@
+{
+  "name": "service_diffusion_sympa",
+  "version": "0.1.0",
+  "author": "Olivier Le Monnier <olm@unicaen.fr>",
+  "summary": "Manage deployment and configuration of the Sympa list management service",
+  "license": "GPL-3.0",
+  "source": "https://github.com/sympa-community/sympa-puppet-manifest.git",
+  "project_page": "https://github.com/sympa-community/sympa-puppet-manifest",
+  "issues_url": "https://github.com/sympa-community/sympa-puppet-manifest/issues",
+}
+

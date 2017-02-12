@@ -1,0 +1,21 @@
+* Puppet manifest for Sympa mailing-lists deployment
+
+Made for :
+  - Debian Jessie
+  - Use with Oracle (to be removed ?)
+  - Use with Zimbra LDAP as Alias repository (to be simplified to
+    simple alias file ?)
+  - Use with CAS authentication (to be removed ?)
+  - Use with LDAP authorization (to be removed ?)
+
+
+Files missing :
+  - For oracle :
+    + instantclient-basiclite-linux.x64-12.1.0.2.0.zip
+    + instantclient-sdk-linux.x64-12.1.0.2.0.zip
+    + instantclient-sqlplus-linux.x64-12.1.0.2.0.zip
+  - key and cert file for HTTPS
+
+To be commited back : nginx alternative for web services
+
+To be "developed" : replace postfix by opensmtpd ?
